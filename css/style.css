@@ -1,4 +1,28 @@
-@charset "utf-8";
+/*@charset "utf-8";*/
+/*
+/*	Copyright (c) 2018 Marketify
+/*	Author: Marketify
+/*	This file is made for CURRENT TEMPLATE
+
+
+	01) EDREA BASE
+	02) EDREA HEADER
+	03) EDREA MOBILE MENU
+	04) EDREA HAMBURGER
+	05) EDREA CONTENT
+	06) EDREA ABOUT
+	07) EDREA SERVICES
+	08) EDREA PORTFOLIO
+	09) EDREA NEWS
+	10) EDREA CONTACT
+	11) EDREA FOOTER
+	12) EDREA TO TOP
+	13) EDREA MEDIA QUERIES (FOR SMALL DEVIVES)
+	
+
+/*---------------------------------------------------*/
+/*	01) EDREA BASE
+/*---------------------------------------------------*/
 
 html {
 	overflow-x: hidden;
@@ -176,6 +200,10 @@ img.svg {
 	color: #fff;
 	position: relative;
 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
 
@@ -268,6 +296,10 @@ img.svg {
 	display: block;
 	position: relative;
 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
 
@@ -668,7 +700,12 @@ img.svg {
 	float: left;
 	text-align: center;
 
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
 	box-sizing: border-box;
+	/* Opera/IE 8+ */
 }
 
 .edrea_tm_hero_share ul {
@@ -689,6 +726,10 @@ img.svg {
 	text-decoration: none;
 	color: #fff;
 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
 
@@ -769,7 +810,6 @@ img.svg {
 	height: auto;
 	clear: both;
 	float: left;
-	color: red;
 
 	-webkit-box-sizing: border-box;
 	/* Safari/Chrome, other WebKit */
@@ -792,9 +832,31 @@ img.svg {
 	overflow: hidden;
 }
 
-.edrea_tm_button input:hover {
-	background-color: #BD0A0D;
+.edrea_tm_button a span {
+	position: relative;
+	z-index: 2;
 }
+
+.edrea_tm_button a:before {
+	position: absolute;
+	content: "";
+	top: 0px;
+	height: 100%;
+	left: -25%;
+	width: 0%;
+	background-color: #BD0A0D;
+	transform: skew(50deg);
+	transition-duration: .6s;
+	z-index: 1;
+}
+
+.edrea_tm_button a:hover:before {
+	width: 170%;
+}
+
+/*---------------------------------------------------*/
+/*	06) EDREA ABOUT
+/*---------------------------------------------------*/
 
 .edrea_tm_about_wrapper_all {
 	width: 100%;
@@ -803,7 +865,12 @@ img.svg {
 	float: left;
 	background-color: #fff;
 
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
 	box-sizing: border-box;
+	/* Opera/IE 8+ */
 }
 
 .edrea_tm_main_title_holder {
@@ -1514,6 +1581,10 @@ img.svg {
 	display: inline-block;
 	position: relative;
 
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
 	transition: all .2s ease;
 }
 
@@ -1565,7 +1636,12 @@ img.svg {
 	border: 15px solid #041230;
 	padding: 70px 45px 53px 45px;
 
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
 	box-sizing: border-box;
+	/* Opera/IE 8+ */
 }
 
 .edrea_tm_services_wrap ul li .inner .overlay {
@@ -1577,6 +1653,10 @@ img.svg {
 	background-color: #041230;
 	z-index: 2;
 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
 
@@ -1599,6 +1679,10 @@ img.svg {
 	letter-spacing: 0px;
 	margin-bottom: 19px;
 
+	-webkit-transition: all .3s 0s ease;
+	-moz-transition: all .3s 0s ease;
+	-ms-transition: all .3s 0s ease;
+	-o-transition: all .3s 0s ease;
 	transition: all .3s 0s ease;
 }
 
@@ -1611,6 +1695,10 @@ img.svg {
 	color: #666;
 	letter-spacing: 0px;
 
+	-webkit-transition: all .3s 0s ease;
+	-moz-transition: all .3s 0s ease;
+	-ms-transition: all .3s 0s ease;
+	-o-transition: all .3s 0s ease;
 	transition: all .3s 0s ease;
 }
 
@@ -1628,7 +1716,12 @@ img.svg {
 	color: #eee;
 	z-index: 2;
 	opacity: 0;
-	transition: all .3s .3s ease;
+
+	-webkit-transition: all .3s 3s ease;
+	-moz-transition: all .3s 3s ease;
+	-ms-transition: all .3s 3s ease;
+	-o-transition: all .3s 3s ease;
+	transition: all .3s 3s ease;
 }
 
 .edrea_tm_services_wrap ul li:hover .arrow {
@@ -1685,6 +1778,201 @@ img.svg {
 	height: 30px;
 	position: absolute;
 	color: #fff;
+}
+
+.edrea_tm_services_wrap ul li .inner .link_service {
+	position: absolute;
+	top: -15px;
+	bottom: -15px;
+	left: -15px;
+	right: -15px;
+	z-index: 11;
+}
+
+.edrea_tm_services_wrap ul li .full_definition {
+	display: none;
+}
+
+#edrea_tm_popup_service {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 9999999;
+
+	opacity: 0;
+	visibility: hidden;
+
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+#edrea_tm_popup_service.opened {
+	opacity: 1;
+	visibility: visible;
+}
+
+#edrea_tm_popup_service .inner_popup {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding: 40px 0px;
+
+	box-sizing: border-box;
+}
+
+#edrea_tm_popup_service .short_definition {
+	display: none;
+}
+
+#edrea_tm_popup_service .close {
+	position: absolute;
+	top: 30px;
+	right: 40px;
+	width: 50px;
+	height: 50px;
+	cursor: pointer;
+	display: block;
+	z-index: 111111111;
+	background-color: rgba(255, 255, 255, .8);
+}
+
+#edrea_tm_popup_service .close a {
+	position: relative;
+	display: block;
+	height: 30px;
+	margin-right: 10px;
+	margin-top: 12px;
+}
+
+#edrea_tm_popup_service .close a:before {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 20px;
+	background-color: rgba(0, 0, 0, 1.00);
+	top: 5px;
+	right: 13px;
+	transform: rotate(45deg);
+}
+
+#edrea_tm_popup_service .close a:after {
+	position: absolute;
+	content: "";
+	width: 2px;
+	height: 20px;
+	background-color: rgba(0, 0, 0, 1.00);
+	top: 5px;
+	right: 13px;
+	transform: rotate(135deg);
+}
+
+#edrea_tm_popup_service .service_title {
+	font-family: "Montserrat";
+	font-size: 30px;
+	font-weight: 600;
+	color: #041230;
+	line-height: 1;
+	line-height: 29px;
+	letter-spacing: 0px;
+	margin-bottom: 40px;
+}
+
+#edrea_tm_popup_service .rows {
+	width: 100%;
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+}
+
+#edrea_tm_popup_service .service_socials {
+	width: 100%;
+	float: left;
+	clear: both;
+}
+
+#edrea_tm_popup_service .service_socials ul {
+	margin: 0px;
+	list-style-type: none;
+}
+
+#edrea_tm_popup_service .service_socials ul li {
+	margin: 0px 10px 0px 0px;
+	float: left;
+}
+
+#edrea_tm_popup_service .service_socials ul li a {
+	text-decoration: none;
+	font-size: 15px;
+	font-family: "Montserrat";
+	font-weight: 600;
+	color: #000000;
+
+	transition: all .3s ease;
+}
+
+#edrea_tm_popup_service .service_socials ul li a:hover {
+	color: #BD0A0D;
+}
+
+#edrea_tm_popup_service .photo_list {
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+
+	box-sizing: border-box;
+}
+
+#edrea_tm_popup_service .photo_list ul {
+	margin: 0px;
+	list-style-type: none;
+}
+
+#edrea_tm_popup_service .photo_list ul li {
+	margin: 0px 0px 7px 0px;
+	position: relative;
+	padding-left: 20px;
+}
+
+#edrea_tm_popup_service .photo_list ul li:last-child {
+	margin-bottom: 0px;
+}
+
+#edrea_tm_popup_service .photo_list ul li:before {
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 6px;
+	border-radius: 100%;
+	background-color: #000000;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#edrea_tm_popup_service .photo_list ul li span {
+	font-weight: 600;
+	font-size: 15px;
+}
+
+#edrea_tm_popup_service blockquote {
+	font-style: italic;
+	position: relative;
+	padding-left: 30px;
+}
+
+#edrea_tm_popup_service blockquote:before {
+	position: absolute;
+	content: "";
+	width: 3px;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 1.00);
+	left: 0px;
 }
 
 /*---------------------------------------------------*/
@@ -1816,6 +2104,23 @@ img.svg {
 	visibility: hidden;
 }
 
+.edrea_tm_portfolio_titles.visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+.edrea_tm_portfolio_titles .work__cat {
+	position: absolute;
+	background: #ffffff;
+	top: 100%;
+	left: 0;
+	margin-top: -5px;
+	font-family: "Montserrat";
+	font-size: 12px;
+	font-weight: 400;
+	padding: 5px 15px;
+}
+
 .entry {
 	position: relative;
 }
@@ -1829,42 +2134,6 @@ img.svg {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-}
-
-.edrea_tm_portfolio_list li:nth-child(1) .edrea_tm_portfolio_image_main {
-	background-image: url(..//img/portfolio/1.jpg);
-}
-
-.edrea_tm_portfolio_list li:nth-child(2) .edrea_tm_portfolio_image_main {
-	background-image: url(..//img/portfolio/2.jpg);
-}
-
-.edrea_tm_portfolio_list li:nth-child(3) .edrea_tm_portfolio_image_main {
-	background-image: url(..//img/portfolio/3.jpg);
-}
-
-.edrea_tm_portfolio_list li:nth-child(4) .edrea_tm_portfolio_image_main {
-	background-image: url(..//img/portfolio/4.jpg);
-}
-
-.edrea_tm_portfolio_list li:nth-child(5) .edrea_tm_portfolio_image_main {
-	background-image: url(..//img/portfolio/5.jpg);
-}
-
-.edrea_tm_portfolio_list li:nth-child(6) .edrea_tm_portfolio_image_main {
-	background-image: url(..//img/portfolio/6.jpg);
-}
-
-.edrea_tm_portfolio_wrapper_all[data-portfolio-style="default"] .edrea_tm_second_portfolio {
-	display: none;
-}
-
-.edrea_tm_portfolio_wrapper_all[data-portfolio-style="filterable"] .edrea_tm_first_portfolio {
-	display: none;
-}
-
-.edrea_tm_portfolio_wrapper_all[data-portfolio-style="filterable"] .edrea_tm_second_portfolio {
-	display: block;
 }
 
 /*---------------------------------------------------*/
@@ -2086,7 +2355,6 @@ img.svg {
 	display: block;
 	margin-bottom: 20px;
 	width: 100%;
-
 	float: left;
 }
 
@@ -2118,6 +2386,10 @@ img.svg {
 	position: relative;
 	margin-left: 23px;
 
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
 	transition: all .3s ease;
 }
 
@@ -2308,7 +2580,12 @@ img.svg {
 	float: left;
 	padding-right: 40px;
 
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
 	box-sizing: border-box;
+	/* Opera/IE 8+ */
 }
 
 .edrea_tm_contact_wrap_all .leftbox .short_info_wrap {
@@ -2317,7 +2594,12 @@ img.svg {
 	clear: both;
 	float: left;
 
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
 	box-sizing: border-box;
+	/* Opera/IE 8+ */
 }
 
 .edrea_tm_contact_wrap_all .leftbox .short_info_wrap ul {
@@ -2350,7 +2632,12 @@ img.svg {
 	height: auto;
 	float: right;
 
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
 	box-sizing: border-box;
+	/* Opera/IE 8+ */
 }
 
 .edrea_tm_contact_wrap {
@@ -2594,7 +2881,6 @@ img.svg {
 	padding: 22px;
 	border-radius: 3px;
 	display: inline-block;
-	transition: all .2s ease;
 
 	opacity: 0;
 	visibility: hidden;
@@ -2659,7 +2945,6 @@ img.svg {
 	padding-top: 20px;
 }
 
-
 #particles-js {
 	width: 100%;
 	height: 100%;
@@ -2689,8 +2974,10 @@ img.svg {
 	z-index: 10;
 }
 
-.images {
-	background: #BD0A0D
+.edrea_tm_footer_wrap.intro {
+	padding-left: 40px;
+	padding-right: 40px;
+	text-align: center;
 }
 
 .edrea_tm_ripple_wrap {
@@ -2745,7 +3032,7 @@ img.svg {
 }
 
 /*---------------------------------------------------*/
-/*	14) EDREA MEDIA QUERIES (FOR SMALL DEVIVES)
+/*	13) EDREA MEDIA QUERIES (FOR SMALL DEVICES)
 /*---------------------------------------------------*/
 
 @media (max-width: 1620px) {
@@ -2764,6 +3051,10 @@ img.svg {
 	}
 
 	#edrea_tm_popup_blog .close {
+		right: 0px;
+	}
+
+	#edrea_tm_popup_service .close {
 		right: 0px;
 	}
 }
@@ -2830,15 +3121,6 @@ img.svg {
 		padding-bottom: 100px;
 	}
 
-	.edrea_tm_main_demos_list_wrap ul {
-		margin: 0px;
-	}
-
-	.edrea_tm_main_demos_list_wrap ul li {
-		width: 100%;
-		padding: 0px;
-	}
-
 	.edrea_tm_audio_icon {
 		right: 50px;
 	}
@@ -2850,6 +3132,11 @@ img.svg {
 
 	.edrea_tm_totop.opened {
 		bottom: 30px;
+	}
+
+	.edrea_tm_footer_wrap.intro {
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
