@@ -380,7 +380,7 @@ function edrea_tm_animate_text () {
   var animateSpan = $('.edrea_tm_animation_text_word');
 
   animateSpan.typed({
-    strings: ['Vlad Trebukhov', "I'm a Software Developer"],
+    strings: ['Vlad Trebukhov', "I'm a Software Engineer"],
     loop: true,
     startDelay: 1e3,
     backDelay: 2e3
@@ -660,7 +660,7 @@ function edrea_tm_animate_text () {
   var animateSpan = $('.edrea_tm_animation_text_word');
 
   animateSpan.typed({
-    strings: ['Vlad Trebukhov', 'a Software Developer'],
+    strings: ['Vlad Trebukhov', 'a Software Engineer'],
     loop: true,
     startDelay: 1e3,
     backDelay: 2e3
